@@ -1,158 +1,187 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>    Crud -operations HRMS Dashboard</title>
-<link rel="stylesheet" href="dashboard58.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Dashboard</title>
+    <link rel="stylesheet" href="dashboard34.css">>
 </head>
 <body>
 
 <div class="dashboard">
 
+    <!-- Sidebar -->
     <aside class="sidebar">
-        <div class="sidebar__logo">HRMS</div>
+        <h2 class="sidebar__title">HRMS</h2>
 
         <ul class="sidebar__menu">
             <li class="sidebar__item">Dashboard</li>
             <li class="sidebar__item">Employees</li>
-            <li class="sidebar__item">  Leave </li>
+            <li class="sidebar__item">Attendance</li>
             <li class="sidebar__item">Payroll</li>
             <li class="sidebar__item">Reports</li>
-            <li class="sidebar__item">Settings</li>
         </ul>
     </aside>
 
+    <!-- Main -->
     <main class="main">
 
         <header class="header">
-            <h1 class="header__title">HRMS Dashboard</h1>
-            <input type="text" placeholder="Search Employee..." class="header__search">
-        </header>
+            <h1>  crud operations HRMS Dashboard</h1>
+        </header>  
 
-        <section class="stats">
-            <div class="stats__card">
-                <h3>Total Employees</h3>
-                <p>250</p>
-            </div>
+    <h2>Dashboard Overview</h2>
 
-            <div class="stats__card">
-                <h3>Present Today</h3>
-                <p>230</p>
-            </div>
-
-            <div class="stats__card">
-                <h3>On Leave</h3>
-                <p>15</p>
-            </div>
-
-            <div class="stats__card">
-                <h3>New Joiners</h3>
-                <p>5</p>
-            </div>
-        </section>
-
-        <section class="employees">
-            <h2>Employee Directory</h2>
-
-            <div class="employees__grid">
-
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>John Smith</h3>
-                    <p>Frontend Developer</p>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>48</h3>
+                    <p>Total Employees</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
+                <div class="stat-card">
+                    <h3>42</h3>
+                    <p>Active</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>6</h3>
+                    <p>On Leave</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Rs.4.2L</h3>
+                    <p>Payroll</p>
+                </div>
+            </div>
+
+ <!-- Employee Cards -->
+        <section class="employee">
+            <h2>Employees</h2>
+
+            <div class="employee__cards">
+
+                <div class="employee__card">
+                    <h3>John</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="employee__card">
                     <h3>Priya</h3>
                     <p>HR Manager</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
+                <div class="employee__card">
                     <h3>Arun</h3>
-                    <p>UI Designer</p>
+                    <p>Designer</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>Divya</h3>
-                    <p>Recruiter</p>
-                </div>
-
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>Karthik</h3>
+                <div class="employee__card">
+                    <h3>Ravi</h3>
                     <p>Tester</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>Ravi</h3>
-                    <p>Backend Developer</p>
+                <div class="employee__card">
+                    <h3>Meena</h3>
+                    <p>Recruiter</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>Meena</h3>
+                <div class="employee__card">
+                    <h3>Ajay</h3>
+                    <p>Developer</p>
+                </div>
+
+                <div class="employee__card">
+                    <h3>Divya</h3>
                     <p>HR Executive</p>
                 </div>
 
-                <div class="employees__card">
-                    <img src="https://via.placeholder.com/80" alt="employee">
-                    <h3>Ajay</h3>
+                <div class="employee__card">
+                    <h3>Karthik</h3>
                     <p>Team Lead</p>
                 </div>
 
             </div>
         </section>
 
+        <!-- Salary Table -->
         <section class="salary">
             <h2>Salary Details</h2>
 
             <table class="salary__table">
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>Name</th>
                         <th>Department</th>
                         <th>Salary</th>
+                        <th> yrs  </th>
+                        <th>  status</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>EMP001</td>
                         <td>John</td>
                         <td>IT</td>
                         <td>₹50,000</td>
+                        <td>  2 </td>
+                        <td>  active</td>
                     </tr>
 
                     <tr>
-                        <td>EMP002</td>
                         <td>Priya</td>
                         <td>HR</td>
                         <td>₹45,000</td>
+                        <td>  3</td>
+                        <td> active </td>
                     </tr>
 
                     <tr>
-                        <td>EMP003</td>
                         <td>Arun</td>
                         <td>Design</td>
                         <td>₹40,000</td>
+                        <td>  2</td>
+                        <td>  active </td>
                     </tr>
 
                     <tr>
-                        <td>EMP004</td>
                         <td>Ravi</td>
                         <td>QA</td>
                         <td>₹42,000</td>
+                         <td> 2</td>
+                        <td>  active</td>
+                    </tr>
+                    <tr>
+                        <td> meena</td>
+                        <td>database</td>
+                        <td>₹47,000</td>
+                        <td>   2</td>
+                        <td>  active</td>
+                    </tr>
+                    <tr>
+                        <td> ajay</td>
+                        <td>  tester</td>
+                        <td> ₹51,000</td>
+                        <td>  3 </td>
+                        <td>  active</td>
+                    </tr>
+                    <tr>
+                        <td>divya</td>
+                        <td> recruiter</td>
+                        <td>₹54,000  </td>
+                        <td>   3</td>
+                        <td>  active</td>
+                    </tr>
+                    <tr>
+                        <td>karthik</td>
+                        <td>business analyst</td>
+                        <td> ₹50,000</td>
+                        <td>  2</td>
+                        <td>  active </td>
                     </tr>
                 </tbody>
             </table>
         </section>
-
+<H>       </H>
     </main>
 
 </div>
